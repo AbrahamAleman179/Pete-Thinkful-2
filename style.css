@@ -1,43 +1,32 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  background-color: #eae2b7;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
-h1 {
-  text-align: center;
-  font-family: "Playfair Display", Times, serif;
-}
 
-nav {
-  text-align: center;
-  font-family: 'Trebuchet MS', Times, serif;
-  word-spacing: 15px;
-}
-
-a {
-  text-decoration: underline;
-}
-a:link    { color: #d62828;  }
-a:visited { color: #d62828;   }
-
-
+h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
+
+
+header {
+  text-align: center; 
+}
+
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
 article {
   padding: 50px 0;
-}
-
-section h3{
-  text-align: center;
 }
 
 article div {
@@ -45,20 +34,24 @@ article div {
   width: 100%;
 }
 
+
 p {
   line-height: 1.5;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
+
+a:link {
+  color: #d62828;
 }
 
-main div div h2{
-  text-align: center;
-  padding-top: 58px;
+a:hover {
+  color: #f77f00;
 }
+
+nav a {
+  padding-left: 20px;
+}
+
 
 img {
   width: 100%;
@@ -66,17 +59,39 @@ img {
   height: auto;
 }
 
-hr {
-  border: 1px solid black;
-}
-
-/* Add your solution below */
-
 .image-circle {
+  border: 2px solid #003049;
   border-radius: 50%;
-  border: 2px solid #003049
 }
+
 
 footer {
   text-align: center;
-  padding-top: 52px;
+}
+
+
+hr {
+  border: 1px solid black;
+}
+.group{
+  display: flex;
+  flex-direction: row;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}
+.box-left{
+  align-items: left;
+  justify-content: left;
+}
+.box-right{
+  align-items: right;
+  justify-content: right;
+}
+.left{
+  text-align: left;
+}
+.text{
+  font-size: 14px;
+}
